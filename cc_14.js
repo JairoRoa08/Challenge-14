@@ -40,7 +40,6 @@ function createSupportTicket(customerName, issueDescription, priorityLevel) {
 // Appending the ticket div
     ticketContainer.appendChild(ticketDiv);
 }
-
 // Task #3: Highlight urgent tickets (priority: High)
 function highlightUrgentTickets() {
     const highPriorityTickets = document.querySelectorAll(".priority-label");
@@ -81,14 +80,14 @@ function enableInlineEditing(ticketDiv, nameHeading, descriptionPara, priorityLa
         ticketDiv.replaceChild(priorityLabel, priorityInput);
         ticketDiv.removeChild(saveButton);
     });
-// Replace current elements with input fields and add save button
+// Replace current elements
     ticketDiv.replaceChild(nameInput, nameHeading);
     ticketDiv.replaceChild(issueInput, descriptionPara);
     ticketDiv.replaceChild(priorityInput, priorityLabel);
     ticketDiv.appendChild(saveButton);
 }
-// Task #4: Event listener for ticket clicks (demonstrates event bubbling)
+// Task #4: Event listener for ticket clicks
 const ticketContainer = document.getElementById("ticketContainer");
 ticketContainer.addEventListener("click", function () {
-    console.log("A ticket was clicked!"); // Logs message when ticket is clicked
+    console.log("Ticket clicked"); 
 });
