@@ -91,3 +91,11 @@ const ticketContainer = document.getElementById("ticketContainer");
 ticketContainer.addEventListener("click", function () {
     console.log("Ticket clicked"); 
 });
+document.addEventListener('DOMContentLoaded', function() {
+    createSupportTicket("Timmothy T.", "Network issue", "High");
+    createSupportTicket("Jimothy B.", "Payment Issue", "Medium");
+    createSupportTicket("John C.", "Login issue", "Low");
+    createSupportTicket("Juan V.", "Privacy issue", "High");
+
+});
+//Final
